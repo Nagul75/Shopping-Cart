@@ -24,4 +24,12 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #303030;
+    color: rgb(197, 197, 197);
+    border-radius: 3px;
 }

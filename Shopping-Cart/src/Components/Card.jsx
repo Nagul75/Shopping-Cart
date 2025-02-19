@@ -16,6 +16,9 @@ export default function Card({product}) {
                         <p>{product.price}$</p>
                         <p><StarRating rating = {product.rating.rate}/> {product.rating.count} ratings</p>
                     </div>
+                    <div className="cart-button">
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
         </>
     )
