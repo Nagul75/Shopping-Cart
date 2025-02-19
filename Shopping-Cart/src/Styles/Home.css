@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #303030;
+}
+ /* Style for the fixed header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(197, 197, 197);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a {
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px; /* Adjust based on the height of the header */
+    left: 0;
+    width: 150px;
+    color: gray;
+    padding: 20px;
+    padding-top: 50px;
+    height: 100%;
+    z-index: 999;
+    border-right: 1px solid gray;
+    background-color: #242424;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.content {
+    margin-left: 220px; /* Offset the content to the right, taking sidebar width into account */
+    margin-top: 80px; /* Offset for the fixed header */
+    padding: 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
