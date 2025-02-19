@@ -19,6 +19,10 @@ body {
     background-color: #242424;
 }
 
+.header .icon {
+    margin-left: 20px;
+}
+
 .links {
     display: flex;
     justify-content: center;
@@ -33,6 +37,10 @@ body {
 
 .links a:hover {
     text-decoration: underline;
+}
+
+.links:nth-child(2) {
+    margin-right: 20px;
 }
 
 .header h1 {
