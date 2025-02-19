@@ -1,7 +1,18 @@
+import { useEffect } from "react"
+import Card from "./Card"
+import "../Styles/Products.css"
+
 export default function Products() {
+
     return(
         <>
-            <h1>This is Products Page</h1>
+            <div className="card-container">
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            </div>
         </>
     )
 }
