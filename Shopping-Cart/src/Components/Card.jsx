@@ -1,4 +1,5 @@
 import "../Styles/Card.css"
+import StarRating from "./StarRating"
 
 export default function Card({product}) {
     console.log(product)
@@ -13,7 +14,7 @@ export default function Card({product}) {
                     </div>
                     <div className="price-rating">
                         <p>{product.price}$</p>
-                        <p>{product.rating.rate}/5 <i>{product.rating.count}</i></p>
+                        <p><StarRating rating = {product.rating.rate}/> {product.rating.count} ratings</p>
                     </div>
                 </div>
         </>
