@@ -1,7 +1,14 @@
+import CartItem from "./CartItem"
+import "../Styles/Cart.css"
+
 export default function Cart() {
     return(
         <>
-            <h1>This is Cart page</h1>
+            <div className="cart-container">
+                <CartItem/>
+                <CartItem/>
+                <CartItem/>
+            </div>
         </>
     )
 }
