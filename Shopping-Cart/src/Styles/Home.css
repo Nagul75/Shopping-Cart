@@ -13,7 +13,7 @@ body {
     padding: 10px;
     text-align: center;
     z-index: 1000;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid pink;
     display: flex;
     justify-content: space-between;
     background-color: #242424;
@@ -57,7 +57,7 @@ body {
     padding-top: 50px;
     height: 100%;
     z-index: 999;
-    border-right: 1px solid gray;
+    border-right: 1px solid pink;
     background-color: #242424;
 }
 

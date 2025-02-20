@@ -1,11 +1,14 @@
 import "../Styles/Home.css"
 import { Dribbble } from 'lucide-react'
+import { useState } from "react"
 import { Outlet, Link } from "react-router-dom"
 
 export default function Home() {
+    const [cart, setCart] = useState([])
+
     return(
         <>
-            <header class="header">
+            <header className="header">
                 <div className="icon"><Dribbble size={48}/></div>
                 <h1>A Generic Ecommerce Website</h1>
                 <div className="links">
@@ -25,7 +28,7 @@ export default function Home() {
             </aside>
 
             <main className="content">
-                <Outlet/>
+                <Outlet context={[cart, setCart]}/>
             </main>
         </>
     )

@@ -29,7 +29,18 @@
 
 .card button {
     padding: 10px 20px;
-    background-color: #303030;
-    color: rgb(197, 197, 197);
+    background-color: pink;
+    color: black;
     border-radius: 3px;
+    border-left: 2px solid pink;
+    border-bottom: 2px solid pink;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.card button:active {
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid pink;
+    border-right: 2px solid pink;
 }

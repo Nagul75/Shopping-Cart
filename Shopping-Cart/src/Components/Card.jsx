@@ -1,8 +1,13 @@
 import "../Styles/Card.css"
 import StarRating from "./StarRating"
 
-export default function Card({product}) {
-    console.log(product)
+export default function Card({product, cart, setCart}) {
+
+    function addToCart(item) {
+        setCart(prevCart => [...prevCart, item])
+        console.log(cart)
+    }
+
     return(
         <>
                 <div className="card">
@@ -14,10 +19,10 @@ export default function Card({product}) {
                     </div>
                     <div className="price-rating">
                         <p>{product.price}$</p>
-                        <p><StarRating rating = {product.rating.rate}/> {product.rating.count} ratings</p>
+                        <div><StarRating rating = {product.rating.rate}/> {product.rating.count} ratings</div>
                     </div>
                     <div className="cart-button">
-                        <button>Add to Cart</button>
+                        <button onClick={() => addToCart(product)}>Add to Cart</button>
                     </div>
                 </div>
         </>

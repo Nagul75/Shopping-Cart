@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import Card from "./Card"
 import "../Styles/Products.css"
+import { useOutletContext } from "react-router-dom"
 
 export default function Products() {
 
+    const [cart, setCart] = useOutletContext()
     const [products, setProducts] = useState([])
 
     useEffect(()=> {
@@ -18,7 +20,7 @@ export default function Products() {
         <>
             <div className="card-container">
                 {products.map(product =>
-                    <Card product = {product}/>
+                    <Card product = {product} setCart = {setCart} cart = {cart}/>
                  )}
             </div>
         </>
