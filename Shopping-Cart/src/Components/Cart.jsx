@@ -18,8 +18,9 @@ export default function Cart() {
                     <CartItem product = {item} setCart = {setCart}/>
                 )}
             </div>
-            <div className="total-price">
+            <div className="total-price-buy-now">
                 <h1>Grand Total: {total} $</h1>
+                <button>Buy Now</button>
             </div>
             </> :
             <>

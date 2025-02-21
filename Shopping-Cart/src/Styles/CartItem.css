@@ -36,6 +36,6 @@
     border-radius: 3px;
     border-left: 2px solid pink;
     border-bottom: 2px solid pink;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }

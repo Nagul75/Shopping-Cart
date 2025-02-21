@@ -6,12 +6,39 @@
     padding-top: 20px;
 }
 
-.total-price {
+.total-price-buy-now {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
     margin-right: 280px;
     margin-top: 20px;
     color: rgb(197,197,197);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.total-price-buy-now button{
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    border-radius: 3px;
+    border-left: 2px solid pink;
+    border-bottom: 2px solid pink;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.total-price-buy-now button:active{
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    border-radius: 3px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 2px solid pink;
+    border-right: 2px solid pink;
+    margin-bottom: 20px;
 }
 
 .no-item-cart {

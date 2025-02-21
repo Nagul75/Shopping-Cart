@@ -34,13 +34,13 @@
     border-radius: 3px;
     border-left: 2px solid pink;
     border-bottom: 2px solid pink;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .card button:active {
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     border-top: 2px solid pink;
     border-right: 2px solid pink;
 }
