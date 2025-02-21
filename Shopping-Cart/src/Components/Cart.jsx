@@ -17,7 +17,7 @@ export default function Cart() {
                 )}
             </div>
             <div className="total-price">
-                <h1>{total}</h1>
+                <h1>Grand Total: {total} $</h1>
             </div>
         </>
     )
