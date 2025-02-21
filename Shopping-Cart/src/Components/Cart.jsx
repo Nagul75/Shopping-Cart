@@ -11,7 +11,9 @@ export default function Cart() {
 
     return(
         <>
-            <div className="cart-container">
+            {cart.length > 0 ?
+            <>
+                <div className="cart-container">
                 {cart.map(item =>
                     <CartItem product = {item}/>
                 )}
@@ -19,6 +21,10 @@ export default function Cart() {
             <div className="total-price">
                 <h1>Grand Total: {total} $</h1>
             </div>
+            </> :
+            <>
+                <h1 className="no-item-cart">No Item in Cart</h1>
+            </>}
         </>
     )
 }
