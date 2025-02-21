@@ -1,7 +1,11 @@
 import "../Styles/CartItem.css"
 import StarRating from "./StarRating"
 
-export default function CartItem({product}) {
+export default function CartItem({product, setCart}) {
+    function removeFromCart(product) {
+        setCart((prevCart) => prevCart.filter(item => item !== product))
+    }
+
     return (
         <div className="cart-item">
             <div className="cart-content">
@@ -13,6 +17,9 @@ export default function CartItem({product}) {
                         <div><StarRating rating = {product.rating.rate}/> {product.rating.count} ratings</div>
                     </div>
                     <p>{product.description}</p>
+                    <div className="remove-item-btn">
+                        <button onClick={() => removeFromCart(product)}>Remove Item</button>
+                    </div>
                 </div>
             </div>
         </div>

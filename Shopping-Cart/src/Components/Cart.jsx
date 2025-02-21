@@ -15,7 +15,7 @@ export default function Cart() {
             <>
                 <div className="cart-container">
                 {cart.map(item =>
-                    <CartItem product = {item}/>
+                    <CartItem product = {item} setCart = {setCart}/>
                 )}
             </div>
             <div className="total-price">

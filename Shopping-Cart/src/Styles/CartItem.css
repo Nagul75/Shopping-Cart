@@ -27,3 +27,15 @@
     width: 150px;
     height: 150px;
 }
+
+.remove-item-btn button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    border-radius: 3px;
+    border-left: 2px solid pink;
+    border-bottom: 2px solid pink;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
